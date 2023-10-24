@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.background {
+	height: 100vh;
+	width: 100vw;
+	background: url('images/AngryBirdBackground.webp') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.bird {
+	height: 140px;
+	width: 170px;
+	position: fixed;
+	top: 40vh;
+	left: 30vw;
+	z-index: 100;
+}
+
+.hidden-bird{
+    display:none;
+}
+.pipe_sprite {
+	position: fixed;
+	top: 40vh;
+	left: 100vw;
+	height: 70vh;
+	width: 6vw;
+	background:radial-gradient(lightgreen 50%, green);
+	border: 5px solid black;
+}
+
+.bird-icon {
+    width: 200px; /* Adjust as necessary */
+    height: auto;
+    margin-bottom: 10px; /* Space between the image and the text */
+    margin-top: sss0px;
+    display: block; /* Makes the image centered */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message {
+	position: absolute;
+	z-index: 10;
+	color: black;
+	top: 50%;
+	left: 50%;
+	font-size: 4em;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.messageStyle{
+	/* background: white;
+	padding: 30px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 5%; */
+}
+.score {
+	position: fixed;
+	z-index: 10;
+	height: 10vh;
+	font-size: 10vh;
+	font-weight: 100;
+	color: white;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+	top: 0;
+	left: 0;
+	margin: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.score_val {
+	color: gold;
+	font-weight: bold;
+}
+@media only screen and (max-width: 1080px) {
+    .message{
+		font-size: 50px;
+		top: 50%;
+		white-space: nowrap;
+	}
+	.score{
+		font-size: 8vh;
+	}
+	.bird{
+		width: 120px;
+		height: 90px;
+	}
+	.pipe_sprite{
+		width: 14vw;
+	}
+}
+
+.game-title {
+    font-family: 'Bangers', cursive; /* Use the font "Bangers" */
+    text-align: center; /* Center the text horizontally */
+    margin-bottom: 20px; /* Add some space at the top */
+    font-size: 5em; /* Set the font size */
+    color: #D32F2F; /* Set a reddish color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a shadow for a 3D effect */
+    z-index: 10; /* Ensure the title stays above other elements */
+    position: relative; /* Required for z-index to work */
+}
+
+.credit {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.2em;
+    color: #f4c542;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: -20px;
+}
+
