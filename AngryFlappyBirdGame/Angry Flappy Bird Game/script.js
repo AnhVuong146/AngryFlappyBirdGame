@@ -22,7 +22,7 @@ message.classList.add('messageStyle');
 
 //CHANGING BIRD SKINS
 let currentBirdImageIndex = 1;
-let totalBirdImages = 6;
+let totalBirdImages = 7;
 let birdIcon = document.querySelector('.bird-icon');
 
 birdIcon.addEventListener('click', () => {
